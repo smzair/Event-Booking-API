@@ -1,0 +1,104 @@
+{
+  "info": {
+    "name": "Event Booking API",
+    "_postman_id": "event-booking-api",
+    "description": "Postman collection for Event Booking API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Event",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Tech Conference\",\n  \"description\": \"Annual tech meet-up\",\n  \"location\": \"India\",\n  \"start_time\": \"2025-06-01T10:00:00\",\n  \"end_time\": \"2025-06-01T18:00:00\",\n  \"capacity\": 100\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/events"
+        }
+      }
+    },
+    {
+      "name": "List Events",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}/api/events"
+        }
+      }
+    },
+    {
+      "name": "Update Event",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Conference\",\n  \"description\": \"Updated description\",\n  \"location\": \"India\",\n  \"start_time\": \"2025-06-01T10:00:00\",\n  \"end_time\": \"2025-06-01T18:00:00\",\n  \"capacity\": 150\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/events/:id"
+        }
+      }
+    },
+    {
+      "name": "Delete Event",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "{{base_url}}/api/events/:id"
+        }
+      }
+    },
+    {
+      "name": "Register Attendee",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/attendees"
+        }
+      }
+    },
+    {
+      "name": "Book Event",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event_id\": 1,\n  \"attendee_id\": 1\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/bookings"
+        }
+      }
+    }
+  ]
+}

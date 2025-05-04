@@ -39,11 +39,11 @@ API Documentation
  
 Testing
 
-# Run all tests
-php artisan test
-
-	• Unit Tests: Validates form request logic
-	• Feature Tests: Checks booking constraints (overbooking, duplicate booking)
+Run all tests
+	
+ 		• php artisan test
+• Unit Tests: Validates form request logic
+• Feature Tests: Checks booking constraints (overbooking, duplicate booking)
 
 ⸻
 

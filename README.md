@@ -15,6 +15,7 @@ Key Features
 
  and then utilizing the example_notification.php file by calling before each event response by 
  // Send to AWS EventBridge 
+ 
     NotificationService::sendBookingNotification($booking);
 
  

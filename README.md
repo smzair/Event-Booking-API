@@ -13,7 +13,7 @@ Key Features
  			
     • composer require aws/aws-sdk-php
 
- and then utilizing the Service/Notification.php file by calling before each event response by 
+ and then utilizing the Service/Example_Notification.php file by calling before each event response by 
  // Send to AWS EventBridge 
  
     NotificationService::sendBookingNotification($booking);

@@ -19,7 +19,7 @@ Key Features
     NotificationService::sendBookingNotification($booking);
 
  
-Project directory structure
+Final project directory structure should be 
 
 	event-booking-api/
 	├── app/

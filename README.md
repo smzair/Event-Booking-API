@@ -50,7 +50,6 @@ Run all tests
 Optional Enhancements
 	•	Event filtering by date and location
 	•	Pagination on event listing (?page=1&limit=10)
-	•	Swagger/OpenAPI documentation (optional)
 	•	Docker support:
 	•	docker-compose up -d
 	•	Fully containerized local setup

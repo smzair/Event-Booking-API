@@ -10,7 +10,7 @@ php artisan make:model Event -m
 php artisan make:model Attendee -m
 php artisan make:model Booking -m
 
-# Creating Models and migration
+# Creating migration
 
 php artisan migrate
 

@@ -9,14 +9,7 @@ Key Features
 	•	Attendee Management: Register and manage attendees via secure endpoints.
 	•	Booking System: Allow attendees to book events while preventing overbooking and duplicate registrations.
 	•	Validation & Error Handling: Clean API responses with form request validations and exception handling.
- 
 	•	Serverless Notification Architecture (AWS-based diagram included):
- General
- ![image](https://github.com/user-attachments/assets/971e95e6-cf32-4e25-860f-17f7d483a587)
-
-Implementation in this rest app
-![image](https://github.com/user-attachments/assets/de3585fb-9ea6-4f26-9734-b5a4bca7506e)
-
 	•	Real-time notifications via WebSockets
 	•	Email alerts via Amazon SES
 	•	Push notifications via SNS
@@ -31,3 +24,44 @@ Tech Stack
 	•	Testing: PHPUnit (Feature & Unit)
 	•	Dev Tools: Docker, Postman
 	•	Architecture: Event-driven, serverless diagram included
+
+⸻
+
+API Documentation
+	•	Postman collection available in /postman/EventBookingAPI.postman_collection.json
+	•	Endpoints include:
+	•	GET /api/events
+	•	POST /api/events
+	•	POST /api/attendees
+	•	POST /api/bookings
+
+⸻
+ 
+Testing
+
+# Run all tests
+php artisan test
+
+	• Unit Tests: Validates form request logic
+	• Feature Tests: Checks booking constraints (overbooking, duplicate booking)
+
+⸻
+
+Optional Enhancements
+	•	Event filtering by date and location
+	•	Pagination on event listing (?page=1&limit=10)
+	•	Swagger/OpenAPI documentation (optional)
+	•	Docker support:
+	•	docker-compose up -d
+	•	Fully containerized local setup
+
+⸻
+
+Architecture
+	•	Full serverless notification design included (serverless-architecture-diagram.png)
+ General
+ ![image](https://github.com/user-attachments/assets/971e95e6-cf32-4e25-860f-17f7d483a587)
+
+Implementation in this rest app
+![image](https://github.com/user-attachments/assets/de3585fb-9ea6-4f26-9734-b5a4bca7506e)
+

@@ -11,8 +11,51 @@ Key Features
 	•	Validation & Error Handling: Clean API responses with form request validations and exception handling.
 	•	Serverless Notification Architecture (AWS-based diagram included):
 	
+Project directory structure
 
-⸻
+	event-booking-api/
+	├── app/
+	│   ├── Http/
+	│   │   ├── Controllers/
+	│   │   │   └── Api/
+	│   │   │       ├── EventController.php
+	│   │   │       ├── AttendeeController.php
+	│   │   │       └── BookingController.php
+	│   │   └── Requests/
+	│   │       ├── StoreEventRequest.php
+	│   │       ├── StoreAttendeeRequest.php
+	│   │       └── StoreBookingRequest.php
+	│   └── Models/
+	│       ├── Event.php
+	│       ├── Attendee.php
+	│       └── Booking.php
+	│
+	├── database/
+	│   └── migrations/
+	│       ├── create_events_table.php
+	│       ├── create_attendees_table.php
+	│       └── create_bookings_table.php
+	│
+	├── routes/
+	│   └── api.php
+	│
+	├── tests/
+	│   ├── Feature/
+	│   │   └── BookingTest.php
+	│   └── Unit/
+	│       └── EventRequestTest.php
+	│
+	├── postman/
+	│   └── postman_collection.json
+	│
+	├── docker/
+	│   ├── Dockerfile
+	│   └── docker-compose.yml
+	│
+	├── VENDOR/awsSDK
+	├── .env
+	└── composer.json
+	⸻
 
 Tech Stack
 	•	Backend: Laravel 10 (PHP 8+)

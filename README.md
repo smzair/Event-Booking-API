@@ -62,7 +62,7 @@ Project directory structure
 	│   ├── Dockerfile
 	│   └── docker-compose.yml
 	│
-	├── VENDOR/awsSDK
+	├── VENDOR/aws
 	├── .env
 	└── composer.json
 	⸻

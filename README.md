@@ -9,7 +9,7 @@ Key Features
 	•	Attendee Management: Register and manage attendees via secure endpoints.
 	•	Booking System: Allow attendees to book events while preventing overbooking and duplicate registrations.
 	•	Validation & Error Handling: Clean API responses with form request validations and exception handling.
-	•	Application can be easily extended for Serverless Notification Architecture, by adding just few more line of code to the controllers starting by 
+	•	Application can be easily extended for Serverless Notification Architecture, by adding just few more line of code to the controllers starting by installing aws sdk
  			
     • composer require aws/aws-sdk-php
 

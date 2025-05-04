@@ -34,9 +34,10 @@ Project directory structure
 	│   │       ├── StoreAttendeeRequest.php
 	│   │       └── StoreBookingRequest.php
 	│   └── Models/
-	│       ├── Event.php
-	│       ├── Attendee.php
-	│       └── Booking.php
+	│   |   ├── Event.php
+	│   |   ├── Attendee.php
+	│   |   └── Booking.php
+        |
 	│
 	├── database/
 	│   └── migrations/

@@ -10,10 +10,7 @@ Key Features
 	•	Booking System: Allow attendees to book events while preventing overbooking and duplicate registrations.
 	•	Validation & Error Handling: Clean API responses with form request validations and exception handling.
 	•	Serverless Notification Architecture (AWS-based diagram included):
-	•	Real-time notifications via WebSockets
-	•	Email alerts via Amazon SES
-	•	Push notifications via SNS
-	•	Event enrichment via Lambda functions
+	
 
 ⸻
 

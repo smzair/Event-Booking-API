@@ -61,3 +61,4 @@ Architecture
 Implementation in this rest app
 ![image](https://github.com/user-attachments/assets/de3585fb-9ea6-4f26-9734-b5a4bca7506e)
 
+# Note: While this application is implemented using Laravel (PHP) to align with the job role and technology requirements, a more lightweight and faster alternative could be achieved using Python with FastAPI. FastAPI offers asynchronous capabilities, automatic OpenAPI documentation, and a streamlined approach for building modern RESTful APIs efficiently.

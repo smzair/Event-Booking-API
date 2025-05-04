@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class AttendeeController extends Controller
 {
     public function store(StoreAttendeeRequest $request) {
-        return Attendee::create($request->validated());
-    }
+    return response()->json(Attendee::create($request->validated()), 201);
+}
 }

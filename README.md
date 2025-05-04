@@ -1,6 +1,6 @@
 # Event Booking API – Laravel
 
-A full-featured, RESTful API built with Laravel that allows users to manage events, attendees, and bookings with real-time capacity validation, duplicate prevention, and a modular design. The project also integrates a serverless notification architecture using AWS services.
+A full-featured, RESTful API built with Laravel that allows users to manage events, attendees, and bookings with real-time capacity validation, duplicate prevention, and a modular design. This project can also extend to a serverless notification architecture using AWS services.
 
 ⸻
 

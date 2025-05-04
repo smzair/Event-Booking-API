@@ -38,7 +38,7 @@ Project directory structure
 	│   |   ├── Attendee.php
 	│   |   └── Booking.php
         |   |______Services/
-	|          |__ Notification.php (scope of serverless architecture)
+	|          |__ Example_Notification.php (scope of serverless architecture)
 	│
 	├── database/
 	│   └── migrations/

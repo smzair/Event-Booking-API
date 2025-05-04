@@ -9,24 +9,20 @@ use Illuminate\Http\Request;
 class EventController extends Controller
 {
     public function index() {
-        return Event::paginate(10);
-    }
+    return response()->json(Event::all(), 200);
+}
 
-    public function store(StoreEventRequest $request) {
-        return Event::create($request->validated());
-    }
+public function store(StoreEventRequest $request) {
+    return response()->json(Event::create($request->validated()), 201);
+}
 
-    public function show(Event $event) {
-        return $event;
-    }
+public function update(StoreEventRequest $request, Event $event) {
+    $event->update($request->validated());
+    return response()->json($event, 200);
+}
 
-    public function update(UpdateEventRequest $request, Event $event) {
-        $event->update($request->validated());
-        return $event;
-    }
-
-    public function destroy(Event $event) {
-        $event->delete();
-        return response()->noContent();
-    }
+public function destroy(Event $event) {
+    $event->delete();
+    return response()->json(['message' => 'Event deleted'], 200);
+}
 }

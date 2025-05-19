@@ -127,6 +127,11 @@ event-booking-api/
 ├── tests/
 │   ├── Feature/
 │   │   └── BookingTest.php
+|   |   └── EventCreationTest.php
+|   |   └── EventBookingTest.php
+|   |   └── OverbookingTest.php
+|   |   └── DuplicateBookingTest.php
+|   |
 │   └── Unit/
 │       └── EventRequestTest.php
 │

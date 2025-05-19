@@ -18,7 +18,53 @@ Key Features
  
     NotificationService::sendBookingNotification($booking);
 
- 
+
+🧱 How to Run This Application
+Important: This is not a standalone Laravel project. It's meant to be integrated into a fresh Laravel 10 application.
+
+Step 1: Create a new Laravel 10 project
+  • composer create-project laravel/laravel event-booking
+  • cd event-booking
+
+Step 2: Clone this repository separately
+  • git clone https://github.com/smzair/Event-Booking-API.git event-booking-api
+
+
+Step 3: Copy folders and files into your Laravel project
+Replace or merge the following folders in your Laravel project:
+
+
+From event-booking-api/            ➜    To your Laravel project
+──────────────────────────         ──────────────────────────────
+app/Http/Controllers/Api           ➜    app/Http/Controllers/Api
+app/Models                         ➜    app/Models
+app/Services                       ➜    app/Services
+app/Http/Requests                  ➜    app/Http/Requests
+routes/api.php                     ➜    routes/api.php (Overwrite this file)
+database/migrations                ➜    database/migrations (Merge new migrations)
+tests/Feature                      ➜    tests/Feature (test cases)
+
+
+Manually create any missing folders such as Services if your Laravel project doesn't already have them.
+
+Step 4: Install dependencies
+  • composer install
+
+Step 5: Set up environment variables
+ •  cp .env.example .env
+ • php artisan key:generate
+
+Update the .env file to set your database credentials.
+
+Step 6: Run migrations
+ • php artisan migrate
+
+Step 7: Serve the application
+ • php artisan serve
+
+Your API will now be available at http://localhost:8000.
+
+
 Final project directory structure should be 
 
 	event-booking-api/
@@ -91,7 +137,12 @@ Testing
 
 Run all tests
 	
- 		• php artisan test
+• php artisan test
+
+Or to run a specific test:
+• php artisan test --filter=EventBookingTest
+
+
 • Unit Tests: Validates form request logic
 • Feature Tests: Checks booking constraints (overbooking, duplicate booking)
 

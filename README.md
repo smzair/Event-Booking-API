@@ -36,16 +36,16 @@ Step 2: Clone this repository separately
 Step 3: Copy folders and files into your Laravel project
 Replace or merge the following folders in your Laravel project:
 
-
-From event-booking-api/            ➜    To your Laravel project
-──────────────────────────         ──────────────────────────────
-app/Http/Controllers/Api           ➜    app/Http/Controllers/Api
-app/Models                         ➜    app/Models
-app/Services                       ➜    app/Services
-app/Http/Requests                  ➜    app/Http/Requests
-routes/api.php                     ➜    routes/api.php (Overwrite this file)
-database/migrations                ➜    database/migrations (Merge new migrations)
-tests/Feature                      ➜    tests/Feature (test cases)
+	
+	From event-booking-api/            ➜    To your Laravel project
+	──────────────────────────         ──────────────────────────────
+	app/Http/Controllers/Api           ➜    app/Http/Controllers/Api
+	app/Models                         ➜    app/Models
+	app/Services                       ➜    app/Services
+	app/Http/Requests                  ➜    app/Http/Requests
+	routes/api.php                     ➜    routes/api.php (Overwrite this file)
+	database/migrations                ➜    database/migrations (Merge new migrations)
+	tests/Feature                      ➜    tests/Feature (test cases)
 
 
 Manually create any missing folders such as Services if your Laravel project doesn't already have them.

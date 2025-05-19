@@ -51,19 +51,24 @@ Replace or merge the following folders in your Laravel project:
 Manually create any missing folders such as Services if your Laravel project doesn't already have them.
 
 Step 4: Install dependencies
-  • composer install
+	
+	  • composer install
 
 Step 5: Set up environment variables
- •  cp .env.example .env
- • php artisan key:generate
+
+	 •  cp .env.example .env
+	 • php artisan key:generate
 
 Update the .env file to set your database credentials.
 
 Step 6: Run migrations
- • php artisan migrate
+	
+	 • php artisan migrate
 
 Step 7: Serve the application
- • php artisan serve
+	
+	 • php artisan serve
+
 
 Your API will now be available at http://localhost:8000.
 

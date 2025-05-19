@@ -23,11 +23,14 @@ Key Features
 Important: This is not a standalone Laravel project. It's meant to be integrated into a fresh Laravel 10 application.
 
 Step 1: Create a new Laravel 10 project
-  • composer create-project laravel/laravel event-booking
-  • cd event-booking
+
+	  • composer create-project laravel/laravel event-booking
+
+	  • cd event-booking
 
 Step 2: Clone this repository separately
-  • git clone https://github.com/smzair/Event-Booking-API.git event-booking-api
+
+  	• git clone https://github.com/smzair/Event-Booking-API.git event-booking-api
 
 
 Step 3: Copy folders and files into your Laravel project

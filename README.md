@@ -145,14 +145,15 @@ Testing
 
 Run all tests
 	
-• php artisan test
+	• php artisan test
 
 Or to run a specific test:
-• php artisan test --filter=EventBookingTest
+	
+	• php artisan test --filter=EventBookingTest
 
 
-• Unit Tests: Validates form request logic
-• Feature Tests: Checks booking constraints (overbooking, duplicate booking)
+Unit Tests: Validates form request logic
+Feature Tests: Checks booking constraints (overbooking, duplicate booking)
 
 ⸻
 

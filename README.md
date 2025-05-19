@@ -70,7 +70,7 @@ Step 7: Serve the application
 	 • php artisan serve
 
 
-Your API will now be available at http://localhost:8000.
+ API will now be available at http://localhost:8000.
 
 
 Final project directory structure should be 
